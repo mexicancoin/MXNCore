@@ -115,9 +115,9 @@ public:
         nPruneAfterHeight = 100000;
 
 
-genesis = CreateGenesisBlock(1504724056, 686629 , 0x1e0ffff0, 1, 50 * COIN);
+genesis = CreateGenesisBlock(1504798834, 732475, 0x1e0ffff0, 1, 50 * COIN);
 consensus.hashGenesisBlock = genesis.GetHash();
-assert(consensus.hashGenesisBlock == uint256S("0x0000066ae48bb8d19ab6c9bea5b2f54f41a8b890d45e6d3d14aa4e5526b962c4"));
+assert(consensus.hashGenesisBlock == uint256S("0x000004686ed3569c3e3a0cd9ff13b3393382f53492bfb60eda54d718742821a9"));
 assert(genesis.hashMerkleRoot == uint256S("0x97e0b41502bf7e9be91920d8a6e3acca67000af08bcd63f5e4ea5a6ab2976dbf"));
 
         vSeeds.push_back(CDNSSeedData("199.43.199.118", "199.43.199.118"));
@@ -219,9 +219,10 @@ public:
         nDefaultPort = 18683;
         nMaxTipAge = 0x7fffffff;
         nPruneAfterHeight = 1000;
-genesis = CreateGenesisBlock(1504724056, 686629 , 0x1e0ffff0, 1, 50 * COIN);
+
+      genesis = CreateGenesisBlock(1504798834, 732475, 0x1e0ffff0, 1, 50 * COIN);
 consensus.hashGenesisBlock = genesis.GetHash();
-assert(consensus.hashGenesisBlock == uint256S("0x0000066ae48bb8d19ab6c9bea5b2f54f41a8b890d45e6d3d14aa4e5526b962c4"));
+assert(consensus.hashGenesisBlock == uint256S("0x000004686ed3569c3e3a0cd9ff13b3393382f53492bfb60eda54d718742821a9"));
 assert(genesis.hashMerkleRoot == uint256S("0x97e0b41502bf7e9be91920d8a6e3acca67000af08bcd63f5e4ea5a6ab2976dbf"));
       
         vFixedSeeds.clear();
@@ -329,9 +330,9 @@ public:
         nPruneAfterHeight = 1000;
 
 
-genesis = CreateGenesisBlock(1504724056, 686629 , 0x1e0ffff0, 1, 50 * COIN);
+genesis = CreateGenesisBlock(1504798834, 732475, 0x1e0ffff0, 1, 50 * COIN);
 consensus.hashGenesisBlock = genesis.GetHash();
-assert(consensus.hashGenesisBlock == uint256S("0x0000066ae48bb8d19ab6c9bea5b2f54f41a8b890d45e6d3d14aa4e5526b962c4"));
+assert(consensus.hashGenesisBlock == uint256S("0x000004686ed3569c3e3a0cd9ff13b3393382f53492bfb60eda54d718742821a9"));
 assert(genesis.hashMerkleRoot == uint256S("0x97e0b41502bf7e9be91920d8a6e3acca67000af08bcd63f5e4ea5a6ab2976dbf"));
       
         vFixedSeeds.clear();
