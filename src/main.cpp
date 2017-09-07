@@ -1742,7 +1742,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     if (nPrevHeight == 1) {
         nSubsidy = 118260000 * COIN;
     } else if (nPrevHeight < consensusParams.nMasternodePaymentsStartBlock) {
-        nSubsidy = 0 * COIN;
+        nSubsidy = 0.5 * COIN;
     } else {
         nSubsidy = 15 * COIN;
     }
