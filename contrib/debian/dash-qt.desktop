@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MexicanCoin
+Comment=MexicanCoin P2P Cryptocurrency
+Comment[fr]=MexicanCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MexicanCoin, eşten eşe kriptografik sanal para birimi
+Exec=mxn-qt %u
+Terminal=false
+Type=Application
+Icon=mxn128
+MimeType=x-scheme-handler/mxn;
+Categories=Office;Finance;

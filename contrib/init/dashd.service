@@ -1,0 +1,22 @@
+[Unit]
+Description=MexicanCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=mxncore
+Group=mxncore
+
+Type=forking
+PIDFile=/var/lib/mxnd/mxnd.pid
+ExecStart=/usr/bin/mxnd -daemon -pid=/var/lib/mxnd/mxnd.pid \
+-conf=/etc/mxncore/mxn.conf -datadir=/var/lib/mxnd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

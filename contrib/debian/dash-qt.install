@@ -1,0 +1,6 @@
+usr/local/bin/mxn-qt usr/bin
+share/pixmaps/mxn32.xpm usr/share/pixmaps
+share/pixmaps/mxn16.xpm usr/share/pixmaps
+share/pixmaps/mxn128.png usr/share/pixmaps
+debian/mxn-qt.desktop usr/share/applications
+debian/mxn-qt.protocol usr/share/kde4/services/
