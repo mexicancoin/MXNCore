@@ -3,7 +3,7 @@ MexicanCoin Core staging tree
 
 
 
-https://www.monetaryunit.org
+https://www.mexicancoin.org
 
 
 What is MexicanCoin?
