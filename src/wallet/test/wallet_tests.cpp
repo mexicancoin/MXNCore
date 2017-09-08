@@ -220,8 +220,8 @@ BOOST_AUTO_TEST_CASE(coin_selection_tests)
         for (int i = 0; i < 20; i++)
             add_coin(50000 * COIN);
 
-        BOOST_CHECK( wallet.SelectCoinsMinConf(500000 * COIN, 1, 1, vCoins, setCoinsRet, nValueRet));
-        BOOST_CHECK_EQUAL(nValueRet, 500000 * COIN); // we should get the exact amount
+        BOOST_CHECK( wallet.SelectCoinsMinConf(1000 * COIN, 1, 1, vCoins, setCoinsRet, nValueRet));
+        BOOST_CHECK_EQUAL(nValueRet, 1000 * COIN); // we should get the exact amount
         BOOST_CHECK_EQUAL(setCoinsRet.size(), 10U); // in ten coins
 
         // if there's not enough in the smaller coins to make at least 1 * MIN_CHANGE change (0.5+0.6+0.7 < 1.0+1.0),
