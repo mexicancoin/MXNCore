@@ -89,8 +89,8 @@ public:
         consensus.BIP34Height = -1;
         consensus.BIP34Hash = uint256S("0x0");
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 60;
-        consensus.nPowTargetSpacing = 40;
+        consensus.nPowTargetTimespan = 10 * 60;
+        consensus.nPowTargetSpacing = 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 2052;
