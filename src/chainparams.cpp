@@ -110,7 +110,7 @@ public:
 
         vAlertPubKey = ParseHex(
                            "042736aa94dcc46a596d1f42a5402261b6d9d8a72de40ace5a8856f9e5f7bab96f837f926a8ab8d1e2f8d6d7ef59732d99b55352c4fdf775bdb9690c42851609bd");
-        nDefaultPort = 98765;
+        nDefaultPort = 19683;
         nMaxTipAge = 11520;
         nPruneAfterHeight = 100000;
 
