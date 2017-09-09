@@ -121,6 +121,8 @@ assert(consensus.hashGenesisBlock == uint256S("0x000000f7a27b3cddd599e04aac3da37
 assert(genesis.hashMerkleRoot == uint256S("0x97e0b41502bf7e9be91920d8a6e3acca67000af08bcd63f5e4ea5a6ab2976dbf"));
 
         vSeeds.push_back(CDNSSeedData("199.43.199.118", "199.43.199.118"));
+        vSeeds.push_back(CDNSSeedData("192.198.94.86", "192.198.94.86"));
+
 
         // MexicanCoin addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 76);
@@ -155,11 +157,15 @@ assert(genesis.hashMerkleRoot == uint256S("0x97e0b41502bf7e9be91920d8a6e3acca670
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (0, uint256S("0x000007a402fa2831afe62294a55006339dcb23b6b43e4d0276f7db8b44951609"))
+            (0, uint256S("0x000000f7a27b3cddd599e04aac3da375f7d715a37d86ac262033bc1aa6264ceb"))
+            (100, uint256S("0x000000291445a669ac632a856205cc92f7c6da8fb03af9237f2e42d9428eed73"))
+            (500, uint256S("0x000000addd5e3e8520ef162f8d14a9cd32a0535ddd8b115af7f3a5602bd7d63e"))
+            (1000, uint256S("0x0000017f94ef278bcc086e8412e419d471b9a215e9496ef32c894d1a1e6263b4"))
+
              ,
-            1504802012,
-            1,
-            1
+            1504970993,
+            5,
+            5
         };
     }
 };
